@@ -1,9 +1,9 @@
 export default class Wallet {
-    private AccountId: string;
+    private Id: string;
     private Balance: number;
 
-    constructor(readonly account_id: string, balance: number = 0){
-        this.AccountId = account_id;
+    constructor(readonly id: string, balance: number = 0){
+        this.Id = id;
         this.Balance = balance;
     }
 

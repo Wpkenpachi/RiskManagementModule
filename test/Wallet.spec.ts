@@ -20,3 +20,9 @@ test('should debit amount from wallet', () => {
     wallet.pay(450);
     expect(wallet.balance).toBe(550);
 });
+
+test('should debit amount from wallet without funds', () => {
+    const wallet_id = "4321";
+    const wallet = new Wallet(wallet_id);
+    expect(() => wallet.pay(10)).toThrowError("No funds enough to debit amount");
+});
