@@ -1,11 +1,16 @@
 {
-  "name": "RiskManagement",
+  "name": "risk-management",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Wesley Paulo <wesley.santos@catho.com>",
+  "author": "Wesley Paulo <angelportinari17@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage && istanbul-badges-readme"
+  },
   "dependencies": {
     "@types/jest": "^28.1.6",
+    "istanbul-badges-readme": "^1.8.2",
     "jest": "^28.1.3",
     "nodemon": "^2.0.19",
     "ts-jest": "^28.0.7",
